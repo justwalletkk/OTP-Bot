@@ -1,0 +1,7 @@
+{
+  "name": "bot",
+  "language": "javascript",
+  "manager": "yarn",
+  "token": "",
+  "prefix": ""
+}
