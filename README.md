@@ -2,9 +2,11 @@
 
 # Requirements
 
-- Twilio Account
+- An ngrok account
+- A Twilio Account
 - A Twilio Number 
 - Discord Bot Token
+
 
 # Usage
 
