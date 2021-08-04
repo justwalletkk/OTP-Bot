@@ -1,17 +1,17 @@
 require("dotenv").config()
-const accountSid = "AC1693d82b83b89de5662a1096ea4356b1";
-const authToken = "2df86d883e71c75c203ce0e1022e649f";
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 const EventEmitter = require("events").EventEmitter;
 const ev = new EventEmitter();
-const url = "http://28bec50ccfdd.ngrok.io"
+const url = process.env.NGROK_URL;
 
 module.exports.paypal = async(number) => {
     return new Promise((resolve, reject) => {
         client.calls.create({
             "url": `${url}/voice`,
             "to": number,
-            "from": "+13307528307"
+            "from": ""
         }).then(call => {
             if(call) {
                 resolve(call)
