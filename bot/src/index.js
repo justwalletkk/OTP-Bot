@@ -11,11 +11,7 @@ const client = new Client();
   client.prefix = config.prefix;
   client.db = require("quick.db");
   client.chs = new Map();
-  client.owners = [
-    "820248880956309535", // Tenzin
-    "856254224995450931", // Akame
-    "845001299925270579" // Galaxy
-  ]
+  client.owners = config.owners
   await registerCommands(client, '../commands');
   await registerEvents(client, '../events');
   await client.login(config.token);

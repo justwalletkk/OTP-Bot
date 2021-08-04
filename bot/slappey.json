@@ -3,5 +3,9 @@
   "language": "javascript",
   "manager": "yarn",
   "token": "",
-  "prefix": ""
+  "prefix": "",
+  "owners": [
+    "seperate ids in with ,",
+    "and incase in quotes"
+  ]
 }
