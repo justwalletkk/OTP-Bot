@@ -2,6 +2,7 @@
 
 # Requirements
 
+- Visual Studio & its C++ Workload
 - An ngrok account
 - A Twilio account
 - A Twilio number 
