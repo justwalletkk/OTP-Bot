@@ -2,7 +2,7 @@
 
 # Requirements
 
-- Visual Studio & its C++ Workload
+- Visual Studio & its Desktop C++ Workload
 - An ngrok account
 - A Twilio account
 - A Twilio number 
@@ -18,6 +18,7 @@ MAKE SURE YOU ALSO UPDATE THE NUMBERS INSIDE caller.js
 IN bot/src/events/ready/ReadyEvent.js EDIT THE DISCORD CHANNEL ID TO YOURS!
 
 ```
+npm install -g yarn
 yarn install
 yarn bot:prod
 ```
