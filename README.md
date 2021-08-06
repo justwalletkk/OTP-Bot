@@ -11,8 +11,10 @@
 # Usage
 
 UPDATE YOUR VARIABLES IN .env AND bot/slappey.json
+
 MAKE SURE YOU ALSO UPDATE THE NUMBERS INSIDE caller.js
-IN bot/src/events/ReadyEvent.js EDIT THE DISCORD CHANNEL ID TO YOURS!
+
+IN bot/src/events/ready/ReadyEvent.js EDIT THE DISCORD CHANNEL ID TO YOURS!
 
 ```
 yarn install
